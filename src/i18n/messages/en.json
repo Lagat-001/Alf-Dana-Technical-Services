@@ -1,0 +1,179 @@
+{
+  "meta": {
+    "title": "ALF DANA TECHNICAL SERVICES | Professional Home Services UAE",
+    "description": "Professional Villa, Apartment & Office Technical Services in UAE. AC, Plumbing, Electrical, Painting, Carpentry & more."
+  },
+  "nav": {
+    "home": "Home",
+    "services": "Services",
+    "projects": "Projects",
+    "about": "About Us",
+    "contact": "Get a Quote"
+  },
+  "hero": {
+    "badge": "UAE's Trusted Technical Services",
+    "title": "Professional Home & Office Technical Services",
+    "subtitle": "Expert solutions for villas, apartments, and offices across UAE. Quality work, trusted professionals, guaranteed satisfaction.",
+    "cta_primary": "Get a Free Quote",
+    "cta_secondary": "View Our Services",
+    "trust_licensed": "Licensed & Insured",
+    "trust_support": "24/7 Support",
+    "trust_experience": "10+ Years",
+    "trust_projects": "500+ Projects"
+  },
+  "stats": {
+    "projects": "Projects Completed",
+    "experience": "Years Experience",
+    "clients": "Happy Clients",
+    "support": "Support Available"
+  },
+  "services": {
+    "title": "Our Services",
+    "subtitle": "Comprehensive technical services for your home and office",
+    "quote_btn": "Get a Quote",
+    "all": "All Services",
+    "ac": {
+      "name": "AC Maintenance",
+      "desc": "Professional air conditioning installation, maintenance, and repair services for all types of AC units."
+    },
+    "plumbing": {
+      "name": "Plumbing",
+      "desc": "Expert plumbing solutions including leak detection, pipe repair, bathroom fittings, and water heater services."
+    },
+    "electrical": {
+      "name": "Electrical",
+      "desc": "Licensed electrical work including wiring, panel upgrades, lighting installation, and fault diagnosis."
+    },
+    "painting": {
+      "name": "Painting",
+      "desc": "Professional interior and exterior painting services with premium paints and flawless finishing."
+    },
+    "carpentry": {
+      "name": "Carpentry",
+      "desc": "Custom carpentry including furniture assembly, door fitting, cabinet making, and woodwork repairs."
+    },
+    "tiling": {
+      "name": "Tiling",
+      "desc": "Expert tile installation for floors, walls, and bathrooms with precision cutting and grouting."
+    },
+    "cleaning": {
+      "name": "Deep Cleaning",
+      "desc": "Thorough deep cleaning services for homes, offices, post-renovation, and move-in/move-out cleaning."
+    },
+    "maintenance": {
+      "name": "General Maintenance",
+      "desc": "Comprehensive home maintenance packages covering all aspects of property upkeep and repairs."
+    }
+  },
+  "why": {
+    "title": "Why Choose ALF DANA?",
+    "subtitle": "We deliver quality, reliability, and expertise in every project",
+    "fast": {
+      "title": "Fast Response",
+      "desc": "Same-day service available. We respond within 1 hour to urgent requests."
+    },
+    "expert": {
+      "title": "Expert Team",
+      "desc": "All technicians are certified, trained, and background-checked professionals."
+    },
+    "licensed": {
+      "title": "Licensed & Insured",
+      "desc": "Fully licensed by UAE authorities with comprehensive insurance coverage."
+    },
+    "quality": {
+      "title": "Quality Guarantee",
+      "desc": "All work comes with a satisfaction guarantee. We fix it right the first time."
+    }
+  },
+  "testimonials": {
+    "title": "What Our Clients Say",
+    "subtitle": "Trusted by homeowners and businesses across UAE",
+    "1": {
+      "name": "Ahmed Al Mansouri",
+      "location": "Dubai Marina",
+      "text": "Excellent service! The team fixed our AC and plumbing issues quickly and professionally. Highly recommended."
+    },
+    "2": {
+      "name": "Priya Sharma",
+      "location": "Abu Dhabi",
+      "text": "ALF DANA renovated our entire apartment. The quality of work was outstanding and they finished on time."
+    },
+    "3": {
+      "name": "Mohammed Hassan",
+      "location": "Sharjah",
+      "text": "Reliable, professional, and affordable. My go-to service for all home maintenance needs in UAE."
+    }
+  },
+  "gallery": {
+    "title": "Our Work",
+    "subtitle": "A glimpse of our completed projects across UAE",
+    "filter_all": "All",
+    "filter_indoor": "Indoor",
+    "filter_outdoor": "Outdoor",
+    "filter_commercial": "Commercial"
+  },
+  "about": {
+    "title": "About ALF DANA",
+    "subtitle": "Your Trusted Technical Services Partner in UAE",
+    "story_title": "Our Story",
+    "story": "ALF DANA TECHNICAL SERVICES was founded with a simple mission: to provide high-quality, reliable technical services to homes and businesses across the UAE. With over 10 years of experience, we have grown into one of the most trusted names in villa, apartment, and office maintenance services.",
+    "mission_title": "Our Mission",
+    "mission": "To deliver exceptional technical services with integrity, professionalism, and a commitment to quality that exceeds our clients' expectations every time.",
+    "values_title": "Our Values",
+    "v_quality": "Quality First",
+    "v_integrity": "Integrity",
+    "v_reliability": "Reliability",
+    "v_innovation": "Innovation"
+  },
+  "contact": {
+    "title": "Get a Free Quote",
+    "subtitle": "Tell us about your project and we'll get back to you via WhatsApp within 1 hour",
+    "name": "Your Full Name",
+    "phone": "Phone Number",
+    "email": "Email Address",
+    "service": "Select Service",
+    "area": "Your Area / Location",
+    "message": "Describe your requirement",
+    "submit": "Send via WhatsApp",
+    "or": "Or contact us directly",
+    "whatsapp_label": "WhatsApp",
+    "address": "Dubai, UAE",
+    "hours": "Working Hours",
+    "hours_detail": "Mon–Sat: 8:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM"
+  },
+  "footer": {
+    "tagline": "Professional Villa, Apartment & Office Technical Services in UAE",
+    "quick_links": "Quick Links",
+    "services_label": "Services",
+    "contact_label": "Contact",
+    "copyright": "© 2024 ALF DANA TECHNICAL SERVICES. All rights reserved.",
+    "whatsapp_label": "WhatsApp Us"
+  },
+  "chatbot": {
+    "title": "ALF DANA Assistant",
+    "greeting": "Hello! I'm your ALF DANA assistant. How can I help you today?",
+    "placeholder": "Type your question...",
+    "send": "Send",
+    "handoff_msg": "I'll connect you with our WhatsApp team for immediate assistance!",
+    "handoff_btn": "Chat on WhatsApp",
+    "no_match": "I'm not sure about that. Let me connect you with our team.",
+    "faq_1_q": "What services do you offer?",
+    "faq_1_a": "We offer 8 main services: AC Maintenance, Plumbing, Electrical, Painting, Carpentry, Tiling, Deep Cleaning, and General Maintenance. Which one do you need help with?",
+    "faq_2_q": "How do I get a quote?",
+    "faq_2_a": "Getting a quote is easy! Click the WhatsApp button and tell us your requirement. We'll respond within 1 hour with a detailed quote.",
+    "faq_3_q": "Which areas do you cover?",
+    "faq_3_a": "We cover all major areas in UAE including Dubai, Abu Dhabi, Sharjah, Ajman, Ras Al Khaimah, and Fujairah.",
+    "faq_4_q": "How quickly can you respond?",
+    "faq_4_a": "For emergencies, we respond within 1 hour. For scheduled work, we arrange service within 24 hours.",
+    "faq_5_q": "Are you licensed and insured?",
+    "faq_5_a": "Yes! ALF DANA is fully licensed by UAE authorities and carries comprehensive insurance. All technicians are certified professionals.",
+    "faq_6_q": "What are your working hours?",
+    "faq_6_a": "Mon–Sat: 8:00 AM – 8:00 PM, Sunday: 9:00 AM – 5:00 PM. Emergency services available 24/7."
+  },
+  "pwa": {
+    "install_title": "Install ALF DANA App",
+    "install_desc": "Quick access to our services from your phone",
+    "install_btn": "Install App",
+    "dismiss": "Not now"
+  }
+}

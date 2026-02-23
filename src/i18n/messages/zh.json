@@ -1,0 +1,131 @@
+{
+  "meta": {
+    "title": "ALF DANA技术服务 | 阿联酋专业家庭服务",
+    "description": "阿联酋别墅、公寓和办公室的专业技术服务。空调、管道、电气、油漆、木工等。"
+  },
+  "nav": {
+    "home": "首页",
+    "services": "服务",
+    "projects": "项目",
+    "about": "关于我们",
+    "contact": "获取报价"
+  },
+  "hero": {
+    "badge": "阿联酋值得信赖的技术服务",
+    "title": "专业家居与办公技术服务",
+    "subtitle": "为阿联酋别墅、公寓和办公室提供专业解决方案。优质工作，信任专家，满意保证。",
+    "cta_primary": "获取免费报价",
+    "cta_secondary": "查看我们的服务",
+    "trust_licensed": "持牌并投保",
+    "trust_support": "24/7支持",
+    "trust_experience": "10年以上经验",
+    "trust_projects": "500个以上项目"
+  },
+  "stats": {
+    "projects": "完成项目",
+    "experience": "年经验",
+    "clients": "满意客户",
+    "support": "可用支持"
+  },
+  "services": {
+    "title": "我们的服务",
+    "subtitle": "为您的家庭和办公室提供全面技术服务",
+    "quote_btn": "获取报价",
+    "all": "所有服务",
+    "ac": { "name": "空调维护", "desc": "为各类空调机组提供专业安装、维护和维修服务。" },
+    "plumbing": { "name": "管道工程", "desc": "专业管道解决方案，包括漏水检测、管道维修、浴室配件和热水器服务。" },
+    "electrical": { "name": "电气工程", "desc": "持牌电气工程，包括布线、面板升级、照明安装和故障诊断。" },
+    "painting": { "name": "油漆工程", "desc": "使用优质涂料提供专业室内外油漆服务，完美收尾。" },
+    "carpentry": { "name": "木工", "desc": "定制木工，包括家具组装、门安装、橱柜制作和木工维修。" },
+    "tiling": { "name": "铺砖", "desc": "为地板、墙壁和浴室提供精确切割和勾缝的专业瓷砖铺设。" },
+    "cleaning": { "name": "深度清洁", "desc": "为家庭、办公室、装修后及入住/搬出提供彻底的深度清洁服务。" },
+    "maintenance": { "name": "综合维护", "desc": "涵盖物业维护各方面的综合家庭维护套餐。" }
+  },
+  "why": {
+    "title": "为何选择ALF DANA？",
+    "subtitle": "我们在每个项目中提供质量、可靠性和专业知识",
+    "fast": { "title": "快速响应", "desc": "当天服务可用。紧急请求在1小时内响应。" },
+    "expert": { "title": "专家团队", "desc": "所有技术人员均为经过认证、培训和背景调查的专业人士。" },
+    "licensed": { "title": "持牌并投保", "desc": "由阿联酋当局完全许可，拥有全面保险覆盖。" },
+    "quality": { "title": "质量保证", "desc": "所有工作均附带满意保证。我们一次性做对。" }
+  },
+  "testimonials": {
+    "title": "客户评价",
+    "subtitle": "受阿联酋房主和企业信任",
+    "1": { "name": "艾哈迈德·曼苏里", "location": "迪拜码头", "text": "出色的服务！团队迅速而专业地修复了我们的空调和管道问题。强烈推荐。" },
+    "2": { "name": "普里娅·夏尔马", "location": "阿布扎比", "text": "ALF DANA翻新了我们的整个公寓。工作质量出色，准时完成。" },
+    "3": { "name": "穆罕默德·哈桑", "location": "沙迦", "text": "可靠、专业且实惠。我在阿联酋所有家庭维护需求的首选服务。" }
+  },
+  "gallery": {
+    "title": "我们的工作",
+    "subtitle": "我们在阿联酋完成项目的一瞥",
+    "filter_all": "全部",
+    "filter_indoor": "室内",
+    "filter_outdoor": "室外",
+    "filter_commercial": "商业"
+  },
+  "about": {
+    "title": "关于ALF DANA",
+    "subtitle": "您在阿联酋的可信赖技术服务合作伙伴",
+    "story_title": "我们的故事",
+    "story": "ALF DANA技术服务成立时有一个简单的使命：为阿联酋的家庭和企业提供高质量、可靠的技术服务。凭借10年以上的经验，我们已成为别墅、公寓和办公室维护服务中最受信赖的名字之一。",
+    "mission_title": "我们的使命",
+    "mission": "以诚信、专业精神和每次超越客户期望的质量承诺提供卓越的技术服务。",
+    "values_title": "我们的价值观",
+    "v_quality": "质量第一",
+    "v_integrity": "诚信",
+    "v_reliability": "可靠性",
+    "v_innovation": "创新"
+  },
+  "contact": {
+    "title": "获取免费报价",
+    "subtitle": "告诉我们您的项目，我们将在1小时内通过WhatsApp与您联系",
+    "name": "您的全名",
+    "phone": "电话号码",
+    "email": "电子邮件地址",
+    "service": "选择服务",
+    "area": "您的区域/位置",
+    "message": "描述您的需求",
+    "submit": "通过WhatsApp发送",
+    "or": "或直接联系我们",
+    "whatsapp_label": "WhatsApp",
+    "address": "迪拜，阿联酋",
+    "hours": "工作时间",
+    "hours_detail": "周一至周六：8:00 AM – 8:00 PM | 周日：9:00 AM – 5:00 PM"
+  },
+  "footer": {
+    "tagline": "阿联酋别墅、公寓和办公室的专业技术服务",
+    "quick_links": "快速链接",
+    "services_label": "服务",
+    "contact_label": "联系",
+    "copyright": "© 2024 ALF DANA技术服务。版权所有。",
+    "whatsapp_label": "WhatsApp联系我们"
+  },
+  "chatbot": {
+    "title": "ALF DANA助手",
+    "greeting": "您好！我是ALF DANA助手。今天我能为您做什么？",
+    "placeholder": "输入您的问题...",
+    "send": "发送",
+    "handoff_msg": "我将为您连接我们的WhatsApp团队以获得即时帮助！",
+    "handoff_btn": "在WhatsApp上聊天",
+    "no_match": "我不确定这一点。让我为您连接我们的团队。",
+    "faq_1_q": "您提供哪些服务？",
+    "faq_1_a": "我们提供8项主要服务：空调维护、管道工程、电气工程、油漆工程、木工、铺砖、深度清洁和综合维护。",
+    "faq_2_q": "如何获取报价？",
+    "faq_2_a": "点击WhatsApp按钮，告诉我们您的需求。我们将在1小时内回复详细报价。",
+    "faq_3_q": "您覆盖哪些地区？",
+    "faq_3_a": "我们覆盖阿联酋所有主要地区：迪拜、阿布扎比、沙迦、阿治曼、哈伊马角和富查伊拉。",
+    "faq_4_q": "响应速度如何？",
+    "faq_4_a": "紧急情况下1小时内响应。计划工程通常可在24小时内安排服务。",
+    "faq_5_q": "你们有许可证和保险吗？",
+    "faq_5_a": "是的！ALF DANA获得阿联酋当局完全许可，持有全面保险。所有技术人员都是认证专业人士。",
+    "faq_6_q": "工作时间是什么？",
+    "faq_6_a": "周一至周六8:00 AM至8:00 PM，周日9:00 AM至5:00 PM。24/7提供紧急服务。"
+  },
+  "pwa": {
+    "install_title": "安装ALF DANA应用",
+    "install_desc": "从手机快速访问我们的服务",
+    "install_btn": "安装应用",
+    "dismiss": "暂不"
+  }
+}
