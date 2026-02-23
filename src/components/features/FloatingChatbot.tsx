@@ -25,6 +25,7 @@ export function FloatingChatbot({ locale }: FloatingChatbotProps) {
   const [input, setInput] = useState('')
   const [messages, setMessages] = useState<Message[]>([])
   const [initialized, setInitialized] = useState(false)
+  const [showIntroTooltip, setShowIntroTooltip] = useState(false)
   const messagesEndRef = useRef<HTMLDivElement>(null)
   const inputRef = useRef<HTMLInputElement>(null)
 
@@ -38,7 +39,20 @@ export function FloatingChatbot({ locale }: FloatingChatbotProps) {
     scrollToBottom()
   }, [messages])
 
+  // Show intro tooltip after 2 s on first visit; remember dismissal
+  useEffect(() => {
+    if (localStorage.getItem('dana-intro-dismissed')) return
+    const timer = setTimeout(() => setShowIntroTooltip(true), 2000)
+    return () => clearTimeout(timer)
+  }, [])
+
+  const dismissIntroTooltip = () => {
+    setShowIntroTooltip(false)
+    localStorage.setItem('dana-intro-dismissed', 'true')
+  }
+
   const openChat = () => {
+    setShowIntroTooltip(false)
     setIsOpen(true)
     if (!initialized) {
       setInitialized(true)
@@ -200,23 +214,47 @@ export function FloatingChatbot({ locale }: FloatingChatbotProps) {
         </div>
       )}
 
-      {/* Toggle Button */}
-      <button
-        onClick={() => (isOpen ? setIsOpen(false) : openChat())}
-        className="w-14 h-14 bg-[#0A2540] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 relative"
-        aria-label="Open chatbot"
-      >
-        <span className="absolute inset-0 rounded-full bg-[#0A2540] animate-pulse-ring opacity-40" />
-        {isOpen ? (
-          <X className="w-6 h-6 text-white relative z-10" />
-        ) : (
-          <Bot className="w-6 h-6 text-white relative z-10" />
+      {/* Toggle Button + intro tooltip in a row */}
+      <div className="flex items-end gap-3">
+        <button
+          onClick={() => (isOpen ? setIsOpen(false) : openChat())}
+          className="w-14 h-14 bg-[#0A2540] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 relative shrink-0"
+          aria-label="Open chatbot"
+        >
+          <span className="absolute inset-0 rounded-full bg-[#0A2540] animate-pulse-ring opacity-40" />
+          {isOpen ? (
+            <X className="w-6 h-6 text-white relative z-10" />
+          ) : (
+            <Bot className="w-6 h-6 text-white relative z-10" />
+          )}
+          {/* Unread dot */}
+          {!isOpen && (
+            <span className="absolute top-1 end-1 w-3 h-3 bg-[#FF6B00] rounded-full border-2 border-white" />
+          )}
+        </button>
+
+        {/* Dana intro tooltip — shown beside the button before chat opens */}
+        {!isOpen && showIntroTooltip && (
+          <div className="relative mb-1 max-w-[200px] bg-white dark:bg-[#0d2a4a] rounded-2xl rounded-bl-sm shadow-xl border border-border px-3.5 py-2.5 animate-slide-up">
+            {/* Arrow pointing left toward the button */}
+            <span className="absolute -start-2 bottom-4 w-0 h-0 border-y-[6px] border-y-transparent border-e-[8px] border-e-white dark:border-e-[#0d2a4a]" />
+            {/* Dismiss X */}
+            <button
+              onClick={dismissIntroTooltip}
+              className="absolute top-1.5 end-1.5 p-0.5 rounded-full text-muted-foreground hover:text-foreground transition-colors"
+              aria-label="Dismiss"
+            >
+              <X className="w-3 h-3" />
+            </button>
+            <p className="text-xs font-semibold text-[#0A2540] dark:text-white leading-snug pe-4">
+              Hi, I&apos;m Dana! 👋
+            </p>
+            <p className="text-xs text-muted-foreground mt-0.5 leading-snug">
+              Ask me anything about our services…
+            </p>
+          </div>
         )}
-        {/* Unread dot */}
-        {!isOpen && (
-          <span className="absolute top-1 end-1 w-3 h-3 bg-[#FF6B00] rounded-full border-2 border-white" />
-        )}
-      </button>
+      </div>
     </div>
   )
 }
