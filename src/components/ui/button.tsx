@@ -26,11 +26,11 @@ const buttonVariants = cva(
           'bg-[#25D366] text-white hover:bg-[#22c55e] shadow-md',
       },
       size: {
-        default: 'h-10 px-4 py-2',
-        sm: 'h-9 rounded-md px-3',
-        lg: 'h-11 rounded-md px-8',
-        xl: 'h-14 rounded-lg px-10 text-base',
-        icon: 'h-10 w-10',
+        default: 'h-11 px-4 py-2',        /* 44px — meets touch target minimum */
+        sm: 'h-10 rounded-md px-3',       /* 40px — acceptable with surrounding padding */
+        lg: 'h-12 rounded-md px-8',       /* 48px */
+        xl: 'h-14 rounded-lg px-10 text-base', /* 56px */
+        icon: 'h-11 w-11',                /* 44px */
       },
     },
     defaultVariants: {

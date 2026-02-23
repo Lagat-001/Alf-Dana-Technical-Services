@@ -58,10 +58,37 @@
     @apply border-border;
   }
 
+  html {
+    /* Explicit 16px base — ensures text-sm (14px) never drops below legible on mobile */
+    font-size: 16px;
+  }
+
   body {
     @apply bg-background text-foreground;
     font-family: var(--font-inter);
     font-feature-settings: 'rlig' 1, 'calt' 1;
+    /* Comfortable line-height for all screen sizes */
+    line-height: 1.65;
+  }
+
+  /* Remove 300ms tap delay on all interactive elements */
+  button,
+  a,
+  input,
+  select,
+  textarea,
+  [role='button'] {
+    touch-action: manipulation;
+  }
+
+  /* Mobile: ensure body copy text is at least 16px */
+  @media (max-width: 640px) {
+    p,
+    li,
+    label {
+      font-size: 1rem; /* 16px */
+      line-height: 1.7;
+    }
   }
 
   /* Arabic & Urdu font */
@@ -111,13 +138,13 @@
     box-shadow: 0 0 20px rgba(255, 107, 0, 0.3);
   }
 
-  /* Section padding */
+  /* Section padding — generous on desktop, comfortable on mobile */
   .section-pad {
-    @apply py-16 md:py-24;
+    @apply py-12 md:py-20 lg:py-24;
   }
 
-  /* Container with brand max-width */
+  /* Container with brand max-width — more horizontal padding on mobile */
   .container-brand {
-    @apply max-w-7xl mx-auto px-4 sm:px-6 lg:px-8;
+    @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8;
   }
 }

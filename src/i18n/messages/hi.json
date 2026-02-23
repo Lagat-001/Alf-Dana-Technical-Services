@@ -126,6 +126,9 @@
     "install_title": "ALF DANA ऐप इंस्टॉल करें",
     "install_desc": "अपने फोन से हमारी सेवाओं तक त्वरित पहुंच",
     "install_btn": "ऐप इंस्टॉल करें",
-    "dismiss": "अभी नहीं"
+    "dismiss": "अभी नहीं",
+    "download_btn": "ऐप डाउनलोड करें",
+    "download_title": "ALF DANA ऐप डाउनलोड करें",
+    "download_subtitle": "अपने फोन पर त्वरित पहुंच — ऑफलाइन भी काम करता है"
   }
 }

@@ -8,6 +8,7 @@ import { Footer } from '@/components/layout/Footer'
 import { FloatingWhatsApp } from '@/components/features/FloatingWhatsApp'
 import { FloatingChatbot } from '@/components/features/FloatingChatbot'
 import { PWAInstallPrompt } from '@/components/features/PWAInstallPrompt'
+import { AppInstallButton } from '@/components/features/AppInstallButton'
 import '@/app/globals.css'
 
 type Props = {
@@ -85,6 +86,7 @@ export default async function LocaleLayout({ children, params }: Props) {
           />
           <Header locale={locale} />
           <main>{children}</main>
+          <AppInstallButton variant="banner" />
           <Footer locale={locale} />
           <FloatingWhatsApp />
           <FloatingChatbot locale={locale} />

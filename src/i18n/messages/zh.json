@@ -126,6 +126,9 @@
     "install_title": "安装ALF DANA应用",
     "install_desc": "从手机快速访问我们的服务",
     "install_btn": "安装应用",
-    "dismiss": "暂不"
+    "dismiss": "暂不",
+    "download_btn": "下载应用",
+    "download_title": "下载 ALF DANA 应用",
+    "download_subtitle": "在手机上快速访问 — 离线也能使用"
   }
 }

@@ -140,6 +140,7 @@ export function GalleryGrid() {
                   alt={item.title}
                   width={800}
                   height={600}
+                  sizes="(max-width: 640px) 100vw, (max-width: 1024px) 50vw, 33vw"
                   className="w-full object-cover group-hover:scale-105 transition-transform duration-500"
                 />
                 <div className="absolute inset-0 bg-[#0A2540]/0 group-hover:bg-[#0A2540]/50 transition-colors duration-300 flex items-end">
@@ -160,7 +161,7 @@ export function GalleryGrid() {
           onClick={() => setLightbox(null)}
         >
           <button
-            className="absolute top-4 end-4 text-white/80 hover:text-white p-2"
+            className="absolute top-4 end-4 text-white/80 hover:text-white p-3 min-h-[48px] min-w-[48px] flex items-center justify-center"
             onClick={() => setLightbox(null)}
           >
             <X className="w-8 h-8" />

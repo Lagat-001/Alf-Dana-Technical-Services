@@ -7,6 +7,7 @@ import { Link, usePathname } from '@/i18n/navigation'
 import { Button } from '@/components/ui/button'
 import { LanguageSwitcher } from '@/components/features/LanguageSwitcher'
 import { ThemeToggle } from '@/components/features/ThemeToggle'
+import { AppInstallButton } from '@/components/features/AppInstallButton'
 import { MobileMenu } from '@/components/layout/MobileMenu'
 import { getGenericWhatsAppLink } from '@/lib/whatsapp'
 import { cn } from '@/lib/utils'
@@ -100,6 +101,7 @@ export function Header({ locale }: HeaderProps) {
             <div className="flex items-center gap-2">
               <LanguageSwitcher locale={locale} scrolled={scrolled} />
               <ThemeToggle scrolled={scrolled} />
+              <AppInstallButton variant="header" scrolled={scrolled} />
               <Button
                 variant="brandAccent"
                 size="sm"
@@ -114,7 +116,7 @@ export function Header({ locale }: HeaderProps) {
               <button
                 onClick={() => setMobileOpen(true)}
                 className={cn(
-                  'lg:hidden p-2 rounded-md transition-colors',
+                  'lg:hidden p-3 rounded-md transition-colors min-h-[44px] min-w-[44px] flex items-center justify-center',
                   scrolled
                     ? 'text-[#0A2540] dark:text-white hover:bg-gray-100 dark:hover:bg-white/10'
                     : 'text-white hover:bg-white/10'
