@@ -38,8 +38,8 @@ export async function generateMetadata({ params }: Props): Promise<Metadata> {
       title: 'ALF DANA',
     },
     icons: {
-      icon: '/icons/icon-192.png',
-      apple: '/icons/apple-touch-icon.png',
+      icon: '/logo.png',
+      apple: '/logo.png',
     },
     openGraph: {
       title: t('title'),

@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Link } from '@/i18n/navigation'
 import { MessageCircle, Mail, MapPin, Clock, Phone } from 'lucide-react'
@@ -30,21 +31,7 @@ export function Footer({ locale: _locale }: FooterProps) { // eslint-disable-lin
           {/* Brand Column */}
           <div className="space-y-4">
             <div className="flex items-center gap-2">
-              <div className="w-10 h-10 rounded-xl bg-[#FF6B00] flex items-center justify-center">
-                <svg
-                  viewBox="0 0 24 24"
-                  fill="none"
-                  stroke="white"
-                  strokeWidth="2"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                  className="w-6 h-6"
-                >
-                  <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
-                  <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-                  <path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41" />
-                </svg>
-              </div>
+              <Image src="/logo.png" alt="ALF DANA logo" width={40} height={40} className="rounded-xl" />
               <div>
                 <div className="font-bold text-white">ALF DANA</div>
                 <div className="text-xs text-[#FF6B00]">TECHNICAL SERVICES</div>

@@ -1,6 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
+import Image from 'next/image'
 import { useTranslations } from 'next-intl'
 import { Menu } from 'lucide-react'
 import { Link, usePathname } from '@/i18n/navigation'
@@ -54,9 +55,7 @@ export function Header({ locale }: HeaderProps) {
           <div className="flex h-16 md:h-20 items-center justify-between gap-4">
             {/* Logo */}
             <Link href="/" className="flex items-center gap-2 shrink-0">
-              <div className="w-10 h-10 rounded-xl bg-[#FF6B00] flex items-center justify-center">
-                <GearIcon />
-              </div>
+              <Image src="/logo.png" alt="ALF DANA logo" width={40} height={40} className="rounded-xl" priority />
               <div className="hidden sm:block">
                 <div
                   className={cn(
@@ -141,27 +140,3 @@ export function Header({ locale }: HeaderProps) {
   )
 }
 
-function GearIcon() {
-  return (
-    <svg
-      viewBox="0 0 24 24"
-      fill="none"
-      stroke="white"
-      strokeWidth="2"
-      strokeLinecap="round"
-      strokeLinejoin="round"
-      className="w-6 h-6"
-    >
-      <path d="M12 20a8 8 0 1 0 0-16 8 8 0 0 0 0 16Z" />
-      <path d="M12 14a2 2 0 1 0 0-4 2 2 0 0 0 0 4Z" />
-      <path d="M12 2v2" />
-      <path d="M12 20v2" />
-      <path d="m4.93 4.93 1.41 1.41" />
-      <path d="m17.66 17.66 1.41 1.41" />
-      <path d="M2 12h2" />
-      <path d="M20 12h2" />
-      <path d="m6.34 17.66-1.41 1.41" />
-      <path d="m19.07 4.93-1.41 1.41" />
-    </svg>
-  )
-}
