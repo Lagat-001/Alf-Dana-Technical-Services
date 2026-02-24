@@ -3,6 +3,7 @@
 import { useEffect, useState } from 'react'
 import { Bell, X, Check } from 'lucide-react'
 import { useTranslations } from 'next-intl'
+import { AppStorage } from '@/lib/app-storage'
 
 interface PushNotificationManagerProps {
   userName?: string
@@ -128,6 +129,15 @@ function fireThankYouNotification(
 ) {
   if (typeof window === 'undefined' || !('Notification' in window)) return
   if (Notification.permission !== 'granted') return
+
+  // Save to local notification center
+  AppStorage.saveNotification({
+    id: Date.now().toString(),
+    title: t('thank_you_title'),
+    body: phone ? `${t('thank_you_body')} (${phone})` : t('thank_you_body'),
+    date: new Date().toISOString(),
+    read: false,
+  })
 
   // Use service worker notification if SW is active (shows even when tab is in background)
   if ('serviceWorker' in navigator && navigator.serviceWorker.controller) {

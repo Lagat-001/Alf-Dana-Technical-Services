@@ -10,6 +10,8 @@ import { FloatingWhatsApp } from '@/components/features/FloatingWhatsApp'
 import { FloatingChatbot } from '@/components/features/FloatingChatbot'
 import { PWAInstallPrompt } from '@/components/features/PWAInstallPrompt'
 import { AppInstallButton } from '@/components/features/AppInstallButton'
+import { AppBottomNav } from '@/components/app/AppBottomNav'
+import { AppLoginGate } from '@/components/app/AppLoginGate'
 import '@/app/globals.css'
 
 type Props = {
@@ -92,6 +94,8 @@ export default async function LocaleLayout({ children, params }: Props) {
           <FloatingWhatsApp />
           <FloatingChatbot locale={locale} />
           <PWAInstallPrompt locale={locale} />
+          <AppBottomNav />
+          <AppLoginGate />
         </NextIntlClientProvider>
         {/* Register service worker for offline + push support */}
         <Script id="register-sw" strategy="afterInteractive">{`
