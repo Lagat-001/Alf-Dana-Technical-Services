@@ -242,6 +242,22 @@
     "profile_email": "البريد الإلكتروني (اختياري)",
     "edit_profile": "تعديل الملف",
     "save_profile": "حفظ",
-    "clear_data": "مسح جميع البيانات"
+    "clear_data": "مسح جميع البيانات",
+    "login_title": "مرحباً بعودتك",
+    "login_subtitle": "سجّل دخولك للمتابعة",
+    "signup_title": "إنشاء حساب",
+    "signup_subtitle": "انضم إلى ألف دانا اليوم",
+    "login_btn": "تسجيل الدخول",
+    "signup_btn": "إنشاء حساب",
+    "use_email": "استخدم البريد",
+    "use_phone": "استخدم الهاتف",
+    "password_label": "كلمة المرور",
+    "confirm_password_label": "تأكيد كلمة المرور",
+    "have_account": "لديك حساب؟ سجّل دخولك",
+    "no_account": "ليس لديك حساب؟ سجّل الآن",
+    "password_mismatch": "كلمتا المرور غير متطابقتين",
+    "invalid_credentials": "بيانات اعتماد غير صحيحة. حاول مجدداً.",
+    "account_exists": "الحساب موجود. سجّل دخولك بدلاً من ذلك.",
+    "logout": "تسجيل الخروج"
   }
 }

@@ -1,7 +1,7 @@
 'use client'
 
 import { useState, useEffect } from 'react'
-import { Home, ClipboardList, Bell, User, X, Phone, Mail, Save } from 'lucide-react'
+import { Home, ClipboardList, Bell, User, X, Phone, Mail, Save, LogOut } from 'lucide-react'
 import { useTranslations } from 'next-intl'
 import { usePathname } from '@/i18n/navigation'
 import { Link } from '@/i18n/navigation'
@@ -39,6 +39,12 @@ export function AppBottomNav() {
     if (!editForm.name.trim() || !editForm.phone.trim()) return
     save({ name: editForm.name.trim(), phone: editForm.phone.trim(), email: editForm.email.trim() || undefined })
     setShowProfile(false)
+  }
+
+  const handleLogout = () => {
+    AppStorage.setSession(false)
+    setShowProfile(false)
+    window.location.reload()
   }
 
   if (!isPWA) return null
@@ -149,6 +155,14 @@ export function AppBottomNav() {
               >
                 <Save className="w-4 h-4" />
                 {t('save_profile')}
+              </button>
+
+              <button
+                onClick={handleLogout}
+                className="w-full flex items-center justify-center gap-2 h-11 border border-red-400/30 text-red-400 font-semibold rounded-xl hover:bg-red-400/10 transition-colors"
+              >
+                <LogOut className="w-4 h-4" />
+                {t('logout')}
               </button>
             </div>
           </div>

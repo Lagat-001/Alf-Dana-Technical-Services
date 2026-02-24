@@ -194,6 +194,22 @@
     "profile_email": "ईमेल (वैकल्पिक)",
     "edit_profile": "प्रोफाइल संपादित करें",
     "save_profile": "सहेजें",
-    "clear_data": "सभी डेटा साफ करें"
+    "clear_data": "सभी डेटा साफ करें",
+    "login_title": "वापस स्वागत है",
+    "login_subtitle": "जारी रखने के लिए लॉगिन करें",
+    "signup_title": "खाता बनाएं",
+    "signup_subtitle": "आज ALF DANA से जुड़ें",
+    "login_btn": "लॉग इन",
+    "signup_btn": "साइन अप",
+    "use_email": "ईमेल उपयोग करें",
+    "use_phone": "फ़ोन उपयोग करें",
+    "password_label": "पासवर्ड",
+    "confirm_password_label": "पासवर्ड की पुष्टि करें",
+    "have_account": "पहले से खाता है? लॉग इन करें",
+    "no_account": "खाता नहीं है? साइन अप करें",
+    "password_mismatch": "पासवर्ड मेल नहीं खाते",
+    "invalid_credentials": "गलत जानकारी। पुनः प्रयास करें।",
+    "account_exists": "खाता मौजूद है। लॉग इन करें।",
+    "logout": "लॉग आउट"
   }
 }

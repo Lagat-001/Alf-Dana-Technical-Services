@@ -4,6 +4,13 @@ export interface UserProfile {
   email?: string
 }
 
+export interface AuthCredential {
+  method: 'email' | 'phone'
+  identifier: string
+  password: string
+  name: string
+}
+
 export type RequestStatus = 'Quote Sent' | 'Assigned' | 'In Progress' | 'Completed'
 
 export interface QuoteRequest {
@@ -28,6 +35,8 @@ const KEYS = {
   profile: 'alfdana-profile',
   requests: 'alfdana-requests',
   notifications: 'alfdana-notifications',
+  credential: 'alfdana-credential',
+  session: 'alfdana-session',
 } as const
 
 function safeGet<T>(key: string): T | null {
@@ -86,5 +95,37 @@ export const AppStorage = {
   },
   getUnreadCount(): number {
     return AppStorage.getNotifications().filter((n) => !n.read).length
+  },
+
+  // ── Auth Credential ───────────────────────────────────────
+  saveCredential(c: AuthCredential): void {
+    safeSet(KEYS.credential, c)
+  },
+  getCredential(): AuthCredential | null {
+    return safeGet<AuthCredential>(KEYS.credential)
+  },
+
+  // ── Session ───────────────────────────────────────────────
+  hasSession(): boolean {
+    try {
+      return localStorage.getItem(KEYS.session) === 'true'
+    } catch {
+      return false
+    }
+  },
+  setSession(active: boolean): void {
+    try {
+      if (active) {
+        localStorage.setItem(KEYS.session, 'true')
+      } else {
+        localStorage.removeItem(KEYS.session)
+      }
+    } catch { /* noop */ }
+  },
+  clearAuth(): void {
+    try {
+      localStorage.removeItem(KEYS.credential)
+      localStorage.removeItem(KEYS.session)
+    } catch { /* noop */ }
   },
 }

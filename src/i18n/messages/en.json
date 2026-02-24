@@ -242,6 +242,22 @@
     "profile_email": "Email (optional)",
     "edit_profile": "Edit Profile",
     "save_profile": "Save",
-    "clear_data": "Clear All Data"
+    "clear_data": "Clear All Data",
+    "login_title": "Welcome Back",
+    "login_subtitle": "Log in to continue",
+    "signup_title": "Create Account",
+    "signup_subtitle": "Join ALF DANA today",
+    "login_btn": "Log In",
+    "signup_btn": "Sign Up",
+    "use_email": "Use email",
+    "use_phone": "Use phone",
+    "password_label": "Password",
+    "confirm_password_label": "Confirm Password",
+    "have_account": "Already have an account? Log In",
+    "no_account": "Don't have an account? Sign Up",
+    "password_mismatch": "Passwords don't match",
+    "invalid_credentials": "Incorrect credentials. Try again.",
+    "account_exists": "Account exists. Log in instead.",
+    "logout": "Log Out"
   }
 }

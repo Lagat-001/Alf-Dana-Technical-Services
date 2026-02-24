@@ -194,6 +194,22 @@
     "profile_email": "电子邮件（可选）",
     "edit_profile": "编辑资料",
     "save_profile": "保存",
-    "clear_data": "清除所有数据"
+    "clear_data": "清除所有数据",
+    "login_title": "欢迎回来",
+    "login_subtitle": "登录以继续",
+    "signup_title": "创建账户",
+    "signup_subtitle": "今日加入ALF DANA",
+    "login_btn": "登录",
+    "signup_btn": "注册",
+    "use_email": "使用邮箱",
+    "use_phone": "使用电话",
+    "password_label": "密码",
+    "confirm_password_label": "确认密码",
+    "have_account": "已有账户？登录",
+    "no_account": "没有账户？注册",
+    "password_mismatch": "密码不匹配",
+    "invalid_credentials": "凭据不正确，请重试。",
+    "account_exists": "账户已存在，请登录。",
+    "logout": "退出登录"
   }
 }
