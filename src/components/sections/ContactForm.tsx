@@ -10,6 +10,7 @@ import { Label } from '@/components/ui/label'
 import { Select, SelectContent, SelectItem, SelectTrigger, SelectValue } from '@/components/ui/select'
 import { buildQuoteMessage, getQuoteWhatsAppLink } from '@/lib/whatsapp'
 import { PushNotificationManager } from '@/components/features/PushNotificationManager'
+import { AppStorage } from '@/lib/app-storage'
 
 export function ContactForm() {
   const t = useTranslations('contact')
@@ -75,6 +76,15 @@ export function ContactForm() {
       if ((navigator as Navigator & { canShare: (data?: ShareData) => boolean }).canShare(shareData)) {
         try {
           await navigator.share(shareData)
+          AppStorage.saveRequest({
+            id: Date.now().toString(),
+            service: formData.service,
+            name: formData.name,
+            phone: formData.phone,
+            message: formData.message || undefined,
+            date: new Date().toISOString(),
+            status: 'Quote Sent',
+          })
           setShowPushPrompt(true)
           return
         } catch {
@@ -89,6 +99,17 @@ export function ContactForm() {
 
     // If photo was attached but we couldn't use Web Share, show a hint
     if (photoFile) setPhotoShareHint(true)
+
+    // Save request to localStorage for My Requests / Track Progress
+    AppStorage.saveRequest({
+      id: Date.now().toString(),
+      service: formData.service,
+      name: formData.name,
+      phone: formData.phone,
+      message: formData.message || undefined,
+      date: new Date().toISOString(),
+      status: 'Quote Sent',
+    })
 
     // Trigger push notification prompt (only asks once, handled internally)
     setShowPushPrompt(true)
