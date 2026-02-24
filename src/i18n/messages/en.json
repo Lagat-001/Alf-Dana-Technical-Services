@@ -139,7 +139,11 @@
     "whatsapp_label": "WhatsApp",
     "address": "Dubai, UAE",
     "hours": "Working Hours",
-    "hours_detail": "Mon–Sat: 8:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM"
+    "hours_detail": "Mon–Sat: 8:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM",
+    "photo_btn": "📷 Attach Photo (optional)",
+    "photo_hint": "Helps us understand the issue better",
+    "photo_remove": "Remove photo",
+    "photo_sending": "Photo will be shared via WhatsApp"
   },
   "footer": {
     "tagline": "Professional Villa, Apartment & Office Technical Services in UAE",
@@ -176,7 +180,33 @@
     "install_btn": "Install App",
     "dismiss": "Not now",
     "download_btn": "Download App",
+    "download_btn_offline": "Install Free App – Works Offline",
     "download_title": "Download the ALF DANA App",
-    "download_subtitle": "Quick access on your phone — works offline too"
+    "download_subtitle": "Quick access on your phone — works offline too",
+    "offline_badge": "Works offline",
+    "ios_modal_title": "Add to Home Screen",
+    "ios_step1_title": "Tap the Share button",
+    "ios_step1_desc": "In Safari, tap the Share icon at the bottom of the screen",
+    "ios_step2_title": "Add to Home Screen",
+    "ios_step2_desc": "Scroll down and tap 'Add to Home Screen'",
+    "ios_step3_title": "Launch ALF DANA",
+    "ios_step3_desc": "The app icon will appear on your home screen — tap to open",
+    "ios_got_it": "Got it!",
+    "generic_install_desc": "To install this app, look for the install icon in your browser's address bar or menu.",
+    "android_modal_title": "Install with Chrome",
+    "android_step1_title": "Open Chrome menu",
+    "android_step1_desc": "Tap the three-dot menu (⋮) in the top-right corner of Chrome",
+    "android_step2_title": "Add to Home screen",
+    "android_step2_desc": "Tap 'Add to Home screen' from the menu",
+    "android_step3_title": "Confirm install",
+    "android_step3_desc": "Tap 'Add' — the ALF DANA icon will appear on your home screen"
+  },
+  "notifications": {
+    "permission_title": "Stay updated on your request",
+    "permission_desc": "Get a confirmation notification when we receive your quote",
+    "allow": "Allow",
+    "not_now": "Not now",
+    "thank_you_title": "Thank you for your quote request!",
+    "thank_you_body": "ALF DANA team will contact you shortly"
   }
 }

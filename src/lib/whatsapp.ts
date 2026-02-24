@@ -15,10 +15,11 @@ export interface QuoteFormData {
   service: string
   area: string
   message: string
+  photoFile?: File | null
 }
 
-export function getQuoteWhatsAppLink(formData: QuoteFormData): string {
-  const msg = [
+export function buildQuoteMessage(formData: QuoteFormData): string {
+  return [
     'Hello ALF DANA! I would like to request a quote.',
     `Name: ${formData.name}`,
     `Phone: ${formData.phone}`,
@@ -26,11 +27,14 @@ export function getQuoteWhatsAppLink(formData: QuoteFormData): string {
     `Service: ${formData.service}`,
     `Area: ${formData.area}`,
     formData.message ? `Details: ${formData.message}` : '',
+    formData.photoFile ? `📷 Photo: I have a photo to share (will attach in chat)` : '',
   ]
     .filter(Boolean)
     .join('\n')
+}
 
-  return getWhatsAppLink(msg)
+export function getQuoteWhatsAppLink(formData: QuoteFormData): string {
+  return getWhatsAppLink(buildQuoteMessage(formData))
 }
 
 export function getServiceWhatsAppLink(serviceName: string): string {

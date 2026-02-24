@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Offline – ALF DANA Technical Services</title>
+  <style>
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    :root {
+      --blue: #0A2540;
+      --orange: #FF6B00;
+      --teal: #00B4D8;
+      --bg: #f8fafc;
+      --card: #ffffff;
+      --text: #1e293b;
+      --muted: #64748b;
+    }
+    @media (prefers-color-scheme: dark) {
+      :root { --bg: #0a1628; --card: #0d2a4a; --text: #f1f5f9; --muted: #94a3b8; }
+    }
+    body { font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+      background: var(--bg); color: var(--text); min-height: 100vh;
+      display: flex; flex-direction: column; align-items: center; padding: 24px 16px; }
+    header { width: 100%; max-width: 640px; display: flex; align-items: center;
+      gap: 12px; padding: 16px 0 32px; }
+    header img { width: 48px; height: 48px; border-radius: 10px; object-fit: contain;
+      background: var(--blue); padding: 4px; }
+    header span { font-size: 1rem; font-weight: 700; color: var(--blue); }
+    @media (prefers-color-scheme: dark) { header span { color: #fff; } }
+    .icon-wrap { width: 80px; height: 80px; border-radius: 50%;
+      background: #FFF3E0; display: flex; align-items: center; justify-content: center;
+      margin-bottom: 20px; font-size: 2.5rem; }
+    h1 { font-size: 1.75rem; font-weight: 800; color: var(--blue); text-align: center;
+      margin-bottom: 8px; }
+    @media (prefers-color-scheme: dark) { h1 { color: #fff; } }
+    p.sub { color: var(--muted); text-align: center; font-size: 1rem;
+      max-width: 400px; margin-bottom: 36px; line-height: 1.6; }
+    .card { background: var(--card); border-radius: 16px; padding: 24px;
+      width: 100%; max-width: 640px; margin-bottom: 16px;
+      border: 1px solid rgba(0,0,0,0.06); box-shadow: 0 2px 12px rgba(0,0,0,0.06); }
+    .card h2 { font-size: 0.875rem; font-weight: 700; text-transform: uppercase;
+      letter-spacing: 0.05em; color: var(--muted); margin-bottom: 14px; }
+    .services { display: grid; grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+      gap: 10px; }
+    .service-chip { display: flex; align-items: center; gap: 8px;
+      background: rgba(10,37,64,0.06); border-radius: 10px; padding: 10px 12px;
+      font-size: 0.85rem; font-weight: 600; color: var(--text); }
+    @media (prefers-color-scheme: dark) {
+      .service-chip { background: rgba(255,255,255,0.07); }
+    }
+    .service-chip .dot { width: 8px; height: 8px; border-radius: 50%;
+      background: var(--orange); flex-shrink: 0; }
+    .contact-row { display: flex; align-items: center; gap: 14px;
+      padding: 14px 0; border-bottom: 1px solid rgba(0,0,0,0.06); }
+    .contact-row:last-child { border-bottom: none; }
+    .contact-icon { width: 40px; height: 40px; border-radius: 10px;
+      display: flex; align-items: center; justify-content: center; font-size: 1.25rem; flex-shrink: 0; }
+    .contact-label { font-size: 0.75rem; color: var(--muted); margin-bottom: 2px; }
+    .contact-val { font-size: 0.9rem; font-weight: 600; color: var(--text); }
+    a.contact-val { color: #25D366; text-decoration: none; }
+    a.contact-val:hover { text-decoration: underline; }
+    button.retry { margin-top: 24px; background: var(--orange); color: #fff;
+      border: none; border-radius: 12px; padding: 14px 40px;
+      font-size: 1rem; font-weight: 700; cursor: pointer;
+      box-shadow: 0 4px 20px rgba(255,107,0,0.3);
+      transition: transform 0.15s, box-shadow 0.15s; }
+    button.retry:hover { transform: translateY(-1px); box-shadow: 0 6px 24px rgba(255,107,0,0.4); }
+    button.retry:active { transform: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="/logo.png" alt="ALF DANA" onerror="this.style.display='none'" />
+    <span>ALF DANA TECHNICAL SERVICES</span>
+  </header>
+
+  <div class="icon-wrap">📡</div>
+  <h1>You're Offline</h1>
+  <p class="sub">No internet connection. Here's what you can reach us on — we're always available on WhatsApp!</p>
+
+  <div class="card">
+    <h2>Our Services</h2>
+    <div class="services">
+      <div class="service-chip"><span class="dot"></span>AC Maintenance</div>
+      <div class="service-chip"><span class="dot"></span>Plumbing</div>
+      <div class="service-chip"><span class="dot"></span>Electrical</div>
+      <div class="service-chip"><span class="dot"></span>Painting</div>
+      <div class="service-chip"><span class="dot"></span>Carpentry</div>
+      <div class="service-chip"><span class="dot"></span>Tiling</div>
+      <div class="service-chip"><span class="dot"></span>Deep Cleaning</div>
+      <div class="service-chip"><span class="dot"></span>General Maintenance</div>
+    </div>
+  </div>
+
+  <div class="card">
+    <h2>Contact Us</h2>
+    <div class="contact-row">
+      <div class="contact-icon" style="background:#e7f9ef;">💬</div>
+      <div>
+        <div class="contact-label">WhatsApp</div>
+        <a class="contact-val" href="https://wa.me/971528494331">052 849 4331</a>
+      </div>
+    </div>
+    <div class="contact-row">
+      <div class="contact-icon" style="background:#fff3e0;">📍</div>
+      <div>
+        <div class="contact-label">Location</div>
+        <div class="contact-val">Dubai, United Arab Emirates</div>
+      </div>
+    </div>
+    <div class="contact-row">
+      <div class="contact-icon" style="background:#e0f7ff;">🕐</div>
+      <div>
+        <div class="contact-label">Working Hours</div>
+        <div class="contact-val">Mon–Sat: 8AM–8PM · Sun: 9AM–5PM</div>
+      </div>
+    </div>
+  </div>
+
+  <button class="retry" onclick="window.location.reload()">Try Again</button>
+</body>
+</html>

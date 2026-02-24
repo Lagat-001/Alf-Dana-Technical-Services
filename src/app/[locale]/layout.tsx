@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from 'next'
+import Script from 'next/script'
 import { NextIntlClientProvider } from 'next-intl'
 import { getMessages, getTranslations } from 'next-intl/server'
 import { notFound } from 'next/navigation'
@@ -92,6 +93,15 @@ export default async function LocaleLayout({ children, params }: Props) {
           <FloatingChatbot locale={locale} />
           <PWAInstallPrompt locale={locale} />
         </NextIntlClientProvider>
+        {/* Register service worker for offline + push support */}
+        <Script id="register-sw" strategy="afterInteractive">{`
+          if ('serviceWorker' in navigator) {
+            window.addEventListener('load', function() {
+              navigator.serviceWorker.register('/sw.js')
+                .catch(function(err) { console.error('SW registration failed:', err); });
+            });
+          }
+        `}</Script>
       </body>
     </html>
   )
