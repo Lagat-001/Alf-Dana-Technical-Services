@@ -44,7 +44,11 @@ export function AppInstallButton({
   const [showModal, setShowModal] = useState<'ios' | 'android' | null>(null)
 
   useEffect(() => {
-    if (window.matchMedia('(display-mode: standalone)').matches) {
+    // Android/desktop: display-mode: standalone; iOS Safari: navigator.standalone
+    const isStandalone =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (window.navigator as Navigator & { standalone?: boolean }).standalone === true
+    if (isStandalone) {
       setIsInstalled(true)
       return
     }

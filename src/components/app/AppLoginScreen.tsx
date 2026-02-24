@@ -107,9 +107,13 @@ export function AppLoginScreen({ onSuccess }: Props) {
   }
 
   const inputClass = cn(
-    'w-full h-12 rounded-xl px-4 text-sm text-white placeholder:text-white/30',
-    'bg-white/6 border border-white/12 outline-none transition-all duration-200',
-    'focus:border-[#00B4D8] focus:bg-white/8 focus:ring-2 focus:ring-[#00B4D8]/20'
+    // 'login-input' is used by globals.css to scope the webkit-autofill override
+    'login-input w-full h-12 rounded-xl px-4 text-sm text-white placeholder:text-white/40',
+    // Solid dark background — avoids the transparent-bg-on-light-device problem
+    'bg-[#0d2640] border border-[#1c3d60] outline-none transition-all duration-200',
+    // Force dark color-scheme so browser renders in dark mode; explicit fill for text
+    '[color-scheme:dark] [-webkit-text-fill-color:white] [caret-color:white]',
+    'focus:border-[#00B4D8] focus:bg-[#0f2e50] focus:ring-2 focus:ring-[#00B4D8]/20'
   )
 
   return (

@@ -147,4 +147,13 @@
   .container-brand {
     @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8;
   }
+
+  /* Override iOS/Chrome autofill background on dark login form inputs */
+  .login-input:-webkit-autofill,
+  .login-input:-webkit-autofill:hover,
+  .login-input:-webkit-autofill:focus {
+    -webkit-box-shadow: 0 0 0px 1000px #0d2640 inset !important;
+    -webkit-text-fill-color: #ffffff !important;
+    caret-color: #ffffff;
+  }
 }

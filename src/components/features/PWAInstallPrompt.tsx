@@ -23,7 +23,10 @@ export function PWAInstallPrompt({ locale: _locale }: PWAInstallPromptProps) {
     const dismissed = localStorage.getItem('pwa-dismissed')
     if (dismissed) return
 
-    if (window.matchMedia('(display-mode: standalone)').matches) return
+    const isStandalone =
+      window.matchMedia('(display-mode: standalone)').matches ||
+      (window.navigator as Navigator & { standalone?: boolean }).standalone === true
+    if (isStandalone) return
 
     const handler = (e: Event) => {
       e.preventDefault()
