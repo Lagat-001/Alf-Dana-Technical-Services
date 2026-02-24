@@ -199,7 +199,9 @@
     "android_step2_title": "إضافة إلى الشاشة الرئيسية",
     "android_step2_desc": "اضغط على 'إضافة إلى الشاشة الرئيسية' من القائمة",
     "android_step3_title": "تأكيد التثبيت",
-    "android_step3_desc": "اضغط 'إضافة' — ستظهر أيقونة ألف دانا على شاشتك الرئيسية"
+    "android_step3_desc": "اضغط 'إضافة' — ستظهر أيقونة ألف دانا على شاشتك الرئيسية",
+    "ios_btn": "تثبيت على iPhone",
+    "android_btn": "تثبيت على Android"
   },
   "notifications": {
     "permission_title": "ابق على اطلاع بطلبك",

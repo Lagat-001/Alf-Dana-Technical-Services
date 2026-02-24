@@ -151,7 +151,9 @@
     "android_step2_title": "ہوم اسکرین پر شامل کریں",
     "android_step2_desc": "مینو سے 'ہوم اسکرین میں شامل کریں' دبائیں",
     "android_step3_title": "انسٹال کی تصدیق کریں",
-    "android_step3_desc": "'شامل کریں' دبائیں — ALF DANA آئیکن آپ کی ہوم اسکرین پر ظاہر ہو گا"
+    "android_step3_desc": "'شامل کریں' دبائیں — ALF DANA آئیکن آپ کی ہوم اسکرین پر ظاہر ہو گا",
+    "ios_btn": "iPhone پر انسٹال کریں",
+    "android_btn": "Android پر انسٹال کریں"
   },
   "notifications": {
     "permission_title": "اپنی درخواست پر اپ ڈیٹ پائیں",

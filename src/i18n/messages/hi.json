@@ -151,7 +151,9 @@
     "android_step2_title": "होम स्क्रीन पर जोड़ें",
     "android_step2_desc": "मेनू से 'होम स्क्रीन पर जोड़ें' दबाएं",
     "android_step3_title": "इंस्टॉल की पुष्टि करें",
-    "android_step3_desc": "'जोड़ें' दबाएं — ALF DANA आइकन आपकी होम स्क्रीन पर दिखेगा"
+    "android_step3_desc": "'जोड़ें' दबाएं — ALF DANA आइकन आपकी होम स्क्रीन पर दिखेगा",
+    "ios_btn": "iPhone पर इंस्टॉल करें",
+    "android_btn": "Android पर इंस्टॉल करें"
   },
   "notifications": {
     "permission_title": "अपने अनुरोध पर अपडेट पाएं",

@@ -199,7 +199,9 @@
     "android_step2_title": "Add to Home screen",
     "android_step2_desc": "Tap 'Add to Home screen' from the menu",
     "android_step3_title": "Confirm install",
-    "android_step3_desc": "Tap 'Add' — the ALF DANA icon will appear on your home screen"
+    "android_step3_desc": "Tap 'Add' — the ALF DANA icon will appear on your home screen",
+    "ios_btn": "Install on iPhone",
+    "android_btn": "Install on Android"
   },
   "notifications": {
     "permission_title": "Stay updated on your request",

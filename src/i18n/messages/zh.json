@@ -151,7 +151,9 @@
     "android_step2_title": "添加到主屏幕",
     "android_step2_desc": "从菜单中点击'添加到主屏幕'",
     "android_step3_title": "确认安装",
-    "android_step3_desc": "点击'添加' — ALF DANA图标将出现在您的主屏幕上"
+    "android_step3_desc": "点击'添加' — ALF DANA图标将出现在您的主屏幕上",
+    "ios_btn": "安装到iPhone",
+    "android_btn": "安装到Android"
   },
   "notifications": {
     "permission_title": "获取请求更新",
