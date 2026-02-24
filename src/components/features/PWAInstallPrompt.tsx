@@ -51,7 +51,7 @@ export function PWAInstallPrompt({ locale: _locale }: PWAInstallPromptProps) {
   if (!showBanner || !installEvent) return null
 
   return (
-    <div className="fixed top-0 inset-x-0 z-50 bg-[#0A2540] text-white px-4 py-3 flex items-center gap-3 shadow-lg animate-slide-up">
+    <div className="fixed top-16 md:top-20 inset-x-0 z-50 bg-[#0A2540] text-white px-4 py-3 flex items-center gap-3 shadow-lg animate-slide-up">
       <Smartphone className="w-5 h-5 text-[#FF6B00] shrink-0" />
       <div className="flex-1 min-w-0">
         <span className="text-sm font-semibold">{t('install_title')}</span>

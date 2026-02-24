@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { MessageCircle, MapPin, Clock, Phone, Camera, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -28,8 +28,15 @@ export function ContactForm() {
   const [photoPreview, setPhotoPreview] = useState<string | null>(null)
   const [showPushPrompt, setShowPushPrompt] = useState(false)
   const [photoShareHint, setPhotoShareHint] = useState(false)
+  const [isMobile, setIsMobile] = useState(false)
 
   const photoInputRef = useRef<HTMLInputElement>(null)
+
+  useEffect(() => {
+    setIsMobile(
+      navigator.maxTouchPoints > 0 || /android|iphone|ipad|ipod/i.test(navigator.userAgent)
+    )
+  }, [])
 
   const services = ['ac', 'plumbing', 'electrical', 'painting', 'carpentry', 'tiling', 'cleaning', 'maintenance']
 
@@ -223,9 +230,9 @@ export function ContactForm() {
                   ref={photoInputRef}
                   type="file"
                   accept="image/*"
-                  capture="environment"
+                  {...(isMobile ? { capture: 'environment' as const } : {})}
                   onChange={handlePhotoChange}
-                  className="sr-only"
+                  className="absolute w-px h-px opacity-0 overflow-hidden"
                   id="photo-input"
                   aria-label={t('photo_btn')}
                 />

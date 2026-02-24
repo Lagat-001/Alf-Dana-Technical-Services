@@ -40,11 +40,20 @@ export function HeroSection() {
           </Badge>
 
           {/* Headline */}
-          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6">
-            {t('title').split(' ').slice(0, 3).join(' ')}{' '}
-            <span className="text-gradient-brand">
-              {t('title').split(' ').slice(3).join(' ')}
-            </span>
+          <h1 className="text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-bold text-white leading-tight mb-6 break-words">
+            {(() => {
+              const title = t('title')
+              const words = title.split(' ')
+              // For single-word languages (Chinese), render all in gradient
+              if (words.length <= 2) return <span className="text-gradient-brand">{title}</span>
+              const mid = Math.ceil(words.length / 2)
+              return (
+                <>
+                  {words.slice(0, mid).join(' ')}{' '}
+                  <span className="text-gradient-brand">{words.slice(mid).join(' ')}</span>
+                </>
+              )
+            })()}
           </h1>
 
           {/* Subtitle */}
