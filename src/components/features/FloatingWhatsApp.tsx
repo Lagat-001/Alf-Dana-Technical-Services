@@ -2,12 +2,14 @@
 
 import { useState } from 'react'
 import { getGenericWhatsAppLink } from '@/lib/whatsapp'
+import { useIsPWA } from '@/hooks/useIsPWA'
 
 export function FloatingWhatsApp() {
   const [showTooltip, setShowTooltip] = useState(false)
+  const isPWA = useIsPWA()
 
   return (
-    <div className="fixed bottom-6 end-6 z-50 flex flex-col items-end gap-3">
+    <div className={`fixed ${isPWA ? 'bottom-20' : 'bottom-6'} end-6 z-50 flex flex-col items-end gap-3`}>
       {/* Tooltip */}
       {showTooltip && (
         <div className="bg-white dark:bg-[#0d2a4a] text-sm text-gray-700 dark:text-white px-3 py-2 rounded-lg shadow-lg border border-border whitespace-nowrap animate-fade-in">
