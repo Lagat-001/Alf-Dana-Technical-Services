@@ -22,8 +22,20 @@ export function AppBottomNav() {
   const [showProfile, setShowProfile] = useState(false)
   const [editForm, setEditForm] = useState({ name: '', phone: '', email: '' })
 
+  // Re-read on every tab navigation
   useEffect(() => {
     setUnread(AppStorage.getUnreadCount())
+  }, [pathname])
+
+  // Re-read when user switches back to this PWA tab/window
+  useEffect(() => {
+    const onVisible = () => {
+      if (document.visibilityState === 'visible') {
+        setUnread(AppStorage.getUnreadCount())
+      }
+    }
+    document.addEventListener('visibilitychange', onVisible)
+    return () => document.removeEventListener('visibilitychange', onVisible)
   }, [])
 
   const openProfile = () => {

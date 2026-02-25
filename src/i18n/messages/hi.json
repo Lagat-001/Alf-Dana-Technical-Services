@@ -179,6 +179,8 @@
     "status_sent": "कोटेशन भेजा",
     "status_assigned": "असाइन किया",
     "status_inprogress": "प्रगति में",
+    "status_pending": "लंबित",
+    "status_underreview": "समीक्षाधीन",
     "status_completed": "पूर्ण",
     "no_notifications_title": "कोई सूचना नहीं",
     "no_notifications_desc": "सेवा अनुरोधों पर अपडेट पाने के लिए सूचनाएं चालू करें",

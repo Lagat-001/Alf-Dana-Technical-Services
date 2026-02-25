@@ -230,6 +230,8 @@
     "status_sent": "Quote Sent",
     "status_assigned": "Assigned",
     "status_inprogress": "In Progress",
+    "status_pending": "Pending",
+    "status_underreview": "Under Review",
     "status_completed": "Completed",
     "no_notifications_title": "No notifications",
     "no_notifications_desc": "Allow notifications to get updates on your service requests",

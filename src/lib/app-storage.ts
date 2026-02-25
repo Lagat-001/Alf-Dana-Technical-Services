@@ -11,7 +11,7 @@ export interface AuthCredential {
   name: string
 }
 
-export type RequestStatus = 'Quote Sent' | 'Assigned' | 'In Progress' | 'Completed'
+export type RequestStatus = 'Pending' | 'Under Review' | 'Quote Sent' | 'Assigned' | 'In Progress' | 'Completed'
 
 export interface QuoteRequest {
   id: string
@@ -19,6 +19,7 @@ export interface QuoteRequest {
   name: string
   phone: string
   message?: string
+  photoName?: string
   date: string
   status: RequestStatus
 }

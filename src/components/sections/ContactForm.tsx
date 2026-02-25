@@ -81,8 +81,16 @@ export function ContactForm() {
             name: formData.name,
             phone: formData.phone,
             message: formData.message || undefined,
+            photoName: photoFile?.name ?? undefined,
             date: new Date().toISOString(),
-            status: 'Quote Sent',
+            status: 'Pending',
+          })
+          AppStorage.saveNotification({
+            id: Date.now().toString() + '-notif',
+            title: 'Quote Request Received',
+            body: `Your ${formData.service} request has been received. We'll contact you via WhatsApp shortly.`,
+            date: new Date().toISOString(),
+            read: false,
           })
           setShowPushPrompt(true)
           return
@@ -106,8 +114,16 @@ export function ContactForm() {
       name: formData.name,
       phone: formData.phone,
       message: formData.message || undefined,
+      photoName: photoFile?.name ?? undefined,
       date: new Date().toISOString(),
-      status: 'Quote Sent',
+      status: 'Pending',
+    })
+    AppStorage.saveNotification({
+      id: Date.now().toString() + '-notif',
+      title: 'Quote Request Received',
+      body: `Your ${formData.service} request has been received. We'll contact you via WhatsApp shortly.`,
+      date: new Date().toISOString(),
+      read: false,
     })
 
     // Trigger push notification prompt (only asks once, handled internally)

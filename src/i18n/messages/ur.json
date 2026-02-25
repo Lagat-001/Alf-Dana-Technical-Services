@@ -179,6 +179,8 @@
     "status_sent": "کوٹیشن بھیجا",
     "status_assigned": "تفویض کیا",
     "status_inprogress": "جاری ہے",
+    "status_pending": "زیر التواء",
+    "status_underreview": "زیر جائزہ",
     "status_completed": "مکمل",
     "no_notifications_title": "کوئی اطلاع نہیں",
     "no_notifications_desc": "سروس اپ ڈیٹ پانے کے لیے اطلاعات کی اجازت دیں",

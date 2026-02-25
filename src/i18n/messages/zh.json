@@ -179,6 +179,8 @@
     "status_sent": "报价已发送",
     "status_assigned": "已分配",
     "status_inprogress": "进行中",
+    "status_pending": "待处理",
+    "status_underreview": "审核中",
     "status_completed": "已完成",
     "no_notifications_title": "暂无通知",
     "no_notifications_desc": "允许通知以获取服务请求的更新",

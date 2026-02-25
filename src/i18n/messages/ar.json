@@ -230,6 +230,8 @@
     "status_sent": "تم الإرسال",
     "status_assigned": "تم التعيين",
     "status_inprogress": "قيد التنفيذ",
+    "status_pending": "قيد الانتظار",
+    "status_underreview": "قيد المراجعة",
     "status_completed": "مكتمل",
     "no_notifications_title": "لا توجد إشعارات",
     "no_notifications_desc": "اسمح بالإشعارات للحصول على تحديثات طلبات خدمتك",

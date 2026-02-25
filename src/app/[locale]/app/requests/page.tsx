@@ -8,9 +8,11 @@ import { AppStorage, QuoteRequest, RequestStatus } from '@/lib/app-storage'
 import { getGenericWhatsAppLink } from '@/lib/whatsapp'
 import { cn } from '@/lib/utils'
 
-const STATUS_ORDER: RequestStatus[] = ['Quote Sent', 'Assigned', 'In Progress', 'Completed']
+const STATUS_ORDER: RequestStatus[] = ['Pending', 'Under Review', 'Quote Sent', 'Assigned', 'In Progress', 'Completed']
 
 const STATUS_COLORS: Record<RequestStatus, string> = {
+  'Pending': 'bg-gray-100 text-gray-700 dark:bg-gray-800/40 dark:text-gray-300',
+  'Under Review': 'bg-purple-100 text-purple-800 dark:bg-purple-900/30 dark:text-purple-300',
   'Quote Sent': 'bg-yellow-100 text-yellow-800 dark:bg-yellow-900/30 dark:text-yellow-300',
   'Assigned': 'bg-blue-100 text-blue-800 dark:bg-blue-900/30 dark:text-blue-300',
   'In Progress': 'bg-orange-100 text-orange-800 dark:bg-orange-900/30 dark:text-orange-300',
@@ -42,6 +44,8 @@ function RequestCard({ req }: { req: QuoteRequest }) {
   const currentStep = STATUS_ORDER.indexOf(req.status)
 
   const statusKeys: Record<RequestStatus, string> = {
+    'Pending': t('status_pending'),
+    'Under Review': t('status_underreview'),
     'Quote Sent': t('status_sent'),
     'Assigned': t('status_assigned'),
     'In Progress': t('status_inprogress'),
@@ -71,6 +75,11 @@ function RequestCard({ req }: { req: QuoteRequest }) {
           </p>
           {req.message && (
             <p className="text-xs text-muted-foreground mt-1 truncate">{req.message}</p>
+          )}
+          {req.photoName && (
+            <span className="text-xs text-[#FF6B00] flex items-center gap-1 mt-0.5">
+              📷 {req.photoName}
+            </span>
           )}
         </div>
       </button>
