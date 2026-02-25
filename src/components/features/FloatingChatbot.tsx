@@ -215,7 +215,7 @@ export function FloatingChatbot({ locale }: FloatingChatbotProps) {
       )}
 
       {/* Toggle Button + intro tooltip in a row */}
-      <div className="flex flex-row-reverse items-end gap-3">
+      <div className="flex flex-col-reverse items-end gap-2 sm:flex-row-reverse sm:items-end sm:gap-3">
         <button
           onClick={() => (isOpen ? setIsOpen(false) : openChat())}
           className="w-14 h-14 bg-[#0A2540] rounded-full flex items-center justify-center shadow-lg hover:shadow-xl hover:scale-110 transition-all duration-300 relative shrink-0"
@@ -235,9 +235,11 @@ export function FloatingChatbot({ locale }: FloatingChatbotProps) {
 
         {/* Dana intro tooltip — shown beside the button before chat opens */}
         {!isOpen && showIntroTooltip && (
-          <div className="relative mb-1 max-w-[200px] bg-white dark:bg-[#0d2a4a] rounded-2xl rounded-bl-sm shadow-xl border border-border px-3.5 py-2.5 animate-slide-up">
-            {/* Arrow pointing left toward the button */}
-            <span className="absolute -end-2 bottom-4 w-0 h-0 border-y-[6px] border-y-transparent border-s-[8px] border-s-white dark:border-s-[#0d2a4a]" />
+          <div className="relative sm:mb-1 max-w-[200px] bg-white dark:bg-[#0d2a4a] rounded-2xl rounded-bl-sm shadow-xl border border-border px-3.5 py-2.5 animate-slide-up">
+            {/* Downward arrow — mobile only (tooltip is above button) */}
+            <span className="sm:hidden absolute -bottom-2 end-4 w-0 h-0 border-x-[6px] border-x-transparent border-t-[8px] border-t-white dark:border-t-[#0d2a4a]" />
+            {/* Rightward arrow — desktop only (tooltip is left of button) */}
+            <span className="hidden sm:block absolute -end-2 bottom-4 w-0 h-0 border-y-[6px] border-y-transparent border-s-[8px] border-s-white dark:border-s-[#0d2a4a]" />
             {/* Dismiss X */}
             <button
               onClick={dismissIntroTooltip}
