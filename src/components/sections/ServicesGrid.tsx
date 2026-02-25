@@ -55,6 +55,12 @@ const SERVICES = [
     image: 'https://images.unsplash.com/photo-1567789884554-0b844b597180?w=600&q=80',
     emoji: '🏠',
   },
+  {
+    key: 'glass_buffing',
+    id: 'glass-buffing',
+    image: 'https://images.unsplash.com/photo-1527515637462-cff94aca9547?w=600&q=80',
+    emoji: '🪟',
+  },
 ]
 
 interface ServicesGridProps {

@@ -63,6 +63,10 @@
     "maintenance": {
       "name": "General Maintenance",
       "desc": "Comprehensive home maintenance packages covering all aspects of property upkeep and repairs."
+    },
+    "glass_buffing": {
+      "name": "Glass Buffing",
+      "desc": "Professional glass polishing and buffing to restore clarity and shine to windows, mirrors, and glass surfaces."
     }
   },
   "why": {
