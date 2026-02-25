@@ -58,7 +58,7 @@ const SERVICES = [
   {
     key: 'glass_buffing',
     id: 'glass-buffing',
-    image: 'https://images.unsplash.com/photo-1527515637462-cff94aca9547?w=600&q=80',
+    image: '/glass-buffing.jpg',
     emoji: '🪟',
   },
 ]
