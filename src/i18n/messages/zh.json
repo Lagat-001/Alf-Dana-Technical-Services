@@ -212,6 +212,7 @@
     "account_exists": "账户已存在，请登录。",
     "logout": "退出登录",
     "name_placeholder": "您的全名",
+    "identifier_placeholder": "输入邮箱或电话号码",
     "email_placeholder": "输入您的电子邮箱",
     "phone_placeholder": "输入您的电话号码",
     "password_placeholder": "输入密码",

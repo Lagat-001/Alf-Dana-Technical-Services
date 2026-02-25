@@ -207,7 +207,7 @@ export function AppLoginScreen({ onSuccess }: Props) {
                 type={method === 'email' ? 'email' : 'tel'}
                 value={form.identifier}
                 onChange={(e) => set('identifier', e.target.value)}
-                placeholder={method === 'email' ? t('email_placeholder') : t('phone_placeholder')}
+                placeholder={t('identifier_placeholder')}
                 className={cn(inputClass, 'pl-10')}
                 autoComplete={method === 'email' ? 'email' : 'tel'}
               />

@@ -212,6 +212,7 @@
     "account_exists": "खाता मौजूद है। लॉग इन करें।",
     "logout": "लॉग आउट",
     "name_placeholder": "आपका पूरा नाम",
+    "identifier_placeholder": "ईमेल या फ़ोन नंबर दर्ज करें",
     "email_placeholder": "ईमेल पता दर्ज करें",
     "phone_placeholder": "फ़ोन नंबर दर्ज करें",
     "password_placeholder": "पासवर्ड दर्ज करें",

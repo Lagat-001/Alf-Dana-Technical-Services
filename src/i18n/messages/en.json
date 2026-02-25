@@ -260,6 +260,7 @@
     "account_exists": "Account exists. Log in instead.",
     "logout": "Log Out",
     "name_placeholder": "Your full name",
+    "identifier_placeholder": "Enter your email or phone number",
     "email_placeholder": "Enter your email address",
     "phone_placeholder": "Enter your phone number",
     "password_placeholder": "Enter your password",

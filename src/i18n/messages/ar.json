@@ -260,6 +260,7 @@
     "account_exists": "الحساب موجود. سجّل دخولك بدلاً من ذلك.",
     "logout": "تسجيل الخروج",
     "name_placeholder": "الاسم الكامل",
+    "identifier_placeholder": "أدخل بريدك الإلكتروني أو رقم هاتفك",
     "email_placeholder": "أدخل بريدك الإلكتروني",
     "phone_placeholder": "أدخل رقم هاتفك",
     "password_placeholder": "أدخل كلمة المرور",
