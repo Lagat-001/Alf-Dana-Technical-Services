@@ -1,6 +1,6 @@
 'use client'
 
-import { useState, useRef } from 'react'
+import { useState, useRef, useEffect } from 'react'
 import { useTranslations } from 'next-intl'
 import { MessageCircle, MapPin, Clock, Phone, Paperclip, FileText, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
@@ -29,6 +29,11 @@ export function ContactForm() {
   const [photoPreview, setPhotoPreview] = useState<string | null>(null)
   const [showPushPrompt, setShowPushPrompt] = useState(false)
   const [photoShareHint, setPhotoShareHint] = useState(false)
+  const [isMobileDevice, setIsMobileDevice] = useState(false)
+
+  useEffect(() => {
+    setIsMobileDevice(window.matchMedia('(hover: none) and (pointer: coarse)').matches)
+  }, [])
 
   const photoInputRef = useRef<HTMLInputElement>(null)
 
@@ -58,6 +63,7 @@ export function ContactForm() {
     // If on mobile with Web Share API and a photo is attached, use native share
     if (
       photoFile &&
+      isMobileDevice &&
       typeof navigator !== 'undefined' &&
       'share' in navigator &&
       'canShare' in navigator
@@ -290,6 +296,11 @@ export function ContactForm() {
                       <p className="text-xs text-muted-foreground mt-0.5">
                         {t('photo_sending')}
                       </p>
+                      {!isMobileDevice && (
+                        <p className="text-xs text-amber-600 dark:text-amber-400 mt-1">
+                          On desktop, please attach this file manually in WhatsApp after it opens.
+                        </p>
+                      )}
                     </div>
                   </div>
                 )}
