@@ -115,7 +115,7 @@ export function FloatingChatbot({ locale }: FloatingChatbotProps) {
   }
 
   return (
-    <div className="fixed bottom-24 end-6 z-50">
+    <div className="fixed bottom-36 end-6 z-50">
       {/* Chat Window */}
       {isOpen && (
         <div className="mb-4 w-80 max-w-[calc(100vw-3rem)] bg-white dark:bg-[#0d2a4a] rounded-2xl shadow-2xl border border-border flex flex-col overflow-hidden animate-slide-up">
