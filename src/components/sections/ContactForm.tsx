@@ -1,8 +1,8 @@
 'use client'
 
-import { useState, useRef, useEffect } from 'react'
+import { useState, useRef } from 'react'
 import { useTranslations } from 'next-intl'
-import { MessageCircle, MapPin, Clock, Phone, Camera, X } from 'lucide-react'
+import { MessageCircle, MapPin, Clock, Phone, Paperclip, FileText, X } from 'lucide-react'
 import { Button } from '@/components/ui/button'
 import { Input } from '@/components/ui/input'
 import { Textarea } from '@/components/ui/textarea'
@@ -29,15 +29,8 @@ export function ContactForm() {
   const [photoPreview, setPhotoPreview] = useState<string | null>(null)
   const [showPushPrompt, setShowPushPrompt] = useState(false)
   const [photoShareHint, setPhotoShareHint] = useState(false)
-  const [isMobile, setIsMobile] = useState(false)
 
   const photoInputRef = useRef<HTMLInputElement>(null)
-
-  useEffect(() => {
-    setIsMobile(
-      navigator.maxTouchPoints > 0 || /android|iphone|ipad|ipod/i.test(navigator.userAgent)
-    )
-  }, [])
 
   const services = ['ac', 'plumbing', 'electrical', 'painting', 'carpentry', 'tiling', 'cleaning', 'maintenance']
 
@@ -250,8 +243,7 @@ export function ContactForm() {
                 <input
                   ref={photoInputRef}
                   type="file"
-                  accept="image/*"
-                  {...(isMobile ? { capture: 'environment' as const } : {})}
+                  accept="image/*,application/pdf,.pdf,.doc,.docx"
                   onChange={handlePhotoChange}
                   className="absolute w-px h-px opacity-0 overflow-hidden"
                   id="photo-input"
@@ -264,18 +256,24 @@ export function ContactForm() {
                     onClick={() => photoInputRef.current?.click()}
                     className="w-full flex items-center justify-center gap-2 px-4 py-3 rounded-xl border-2 border-dashed border-[#FF6B00]/40 text-[#FF6B00] hover:border-[#FF6B00] hover:bg-[#FF6B00]/5 transition-all text-sm font-medium"
                   >
-                    <Camera className="w-4 h-4" />
+                    <Paperclip className="w-4 h-4" />
                     {t('photo_btn')}
                   </button>
                 ) : (
                   <div className="flex items-start gap-3 p-3 rounded-xl bg-[#FF6B00]/5 border border-[#FF6B00]/20">
                     <div className="relative shrink-0">
-                      {/* eslint-disable-next-line @next/next/no-img-element */}
-                      <img
-                        src={photoPreview}
-                        alt="Photo preview"
-                        className="w-20 h-20 rounded-lg object-cover border border-[#FF6B00]/30"
-                      />
+                      {photoFile?.type.startsWith('image/') ? (
+                        // eslint-disable-next-line @next/next/no-img-element
+                        <img
+                          src={photoPreview!}
+                          alt="File preview"
+                          className="w-20 h-20 rounded-lg object-cover border border-[#FF6B00]/30"
+                        />
+                      ) : (
+                        <div className="w-20 h-20 rounded-lg border border-[#FF6B00]/30 bg-[#FF6B00]/5 flex items-center justify-center">
+                          <FileText className="w-8 h-8 text-[#FF6B00]" />
+                        </div>
+                      )}
                       <button
                         type="button"
                         onClick={removePhoto}

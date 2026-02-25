@@ -140,7 +140,7 @@
     "address": "Dubai, UAE",
     "hours": "Working Hours",
     "hours_detail": "Mon–Sat: 8:00 AM – 8:00 PM | Sun: 9:00 AM – 5:00 PM",
-    "photo_btn": "📷 Attach Photo (optional)",
+    "photo_btn": "📎 Upload Image / Attach File",
     "photo_hint": "Helps us understand the issue better",
     "photo_remove": "Remove photo",
     "photo_sending": "Photo will be shared via WhatsApp"
