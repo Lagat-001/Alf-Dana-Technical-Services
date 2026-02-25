@@ -69,6 +69,8 @@
     font-feature-settings: 'rlig' 1, 'calt' 1;
     /* Comfortable line-height for all screen sizes */
     line-height: 1.65;
+    /* Stop rubber-band bounce at page edges — makes PWA feel native */
+    overscroll-behavior-y: contain;
   }
 
   /* Remove 300ms tap delay on all interactive elements */
@@ -146,6 +148,13 @@
   /* Container with brand max-width — more horizontal padding on mobile */
   .container-brand {
     @apply max-w-7xl mx-auto px-5 sm:px-6 lg:px-8;
+  }
+
+  /* Promote fixed/sticky elements to GPU compositor layers — eliminates scroll repaint jank */
+  .fixed,
+  .sticky {
+    transform: translateZ(0);
+    backface-visibility: hidden;
   }
 
 }

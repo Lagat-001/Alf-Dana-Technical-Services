@@ -45,7 +45,7 @@ export function Header({ locale }: HeaderProps) {
     <>
       <header
         className={cn(
-          'fixed top-0 inset-x-0 z-40 transition-all duration-300',
+          'fixed top-0 inset-x-0 z-40 transition-[background-color,backdrop-filter,box-shadow,border-color] duration-300',
           scrolled
             ? 'bg-white/95 dark:bg-[#0A2540]/95 backdrop-blur-md shadow-md border-b border-border'
             : 'bg-transparent'
