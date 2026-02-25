@@ -258,6 +258,11 @@
     "password_mismatch": "كلمتا المرور غير متطابقتين",
     "invalid_credentials": "بيانات اعتماد غير صحيحة. حاول مجدداً.",
     "account_exists": "الحساب موجود. سجّل دخولك بدلاً من ذلك.",
-    "logout": "تسجيل الخروج"
+    "logout": "تسجيل الخروج",
+    "name_placeholder": "الاسم الكامل",
+    "email_placeholder": "أدخل بريدك الإلكتروني",
+    "phone_placeholder": "أدخل رقم هاتفك",
+    "password_placeholder": "أدخل كلمة المرور",
+    "confirm_placeholder": "تأكيد كلمة المرور"
   }
 }

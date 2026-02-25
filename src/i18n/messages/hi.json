@@ -210,6 +210,11 @@
     "password_mismatch": "पासवर्ड मेल नहीं खाते",
     "invalid_credentials": "गलत जानकारी। पुनः प्रयास करें।",
     "account_exists": "खाता मौजूद है। लॉग इन करें।",
-    "logout": "लॉग आउट"
+    "logout": "लॉग आउट",
+    "name_placeholder": "आपका पूरा नाम",
+    "email_placeholder": "ईमेल पता दर्ज करें",
+    "phone_placeholder": "फ़ोन नंबर दर्ज करें",
+    "password_placeholder": "पासवर्ड दर्ज करें",
+    "confirm_placeholder": "पासवर्ड की पुष्टि करें"
   }
 }

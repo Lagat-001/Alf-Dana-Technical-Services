@@ -258,6 +258,11 @@
     "password_mismatch": "Passwords don't match",
     "invalid_credentials": "Incorrect credentials. Try again.",
     "account_exists": "Account exists. Log in instead.",
-    "logout": "Log Out"
+    "logout": "Log Out",
+    "name_placeholder": "Your full name",
+    "email_placeholder": "Enter your email address",
+    "phone_placeholder": "Enter your phone number",
+    "password_placeholder": "Enter your password",
+    "confirm_placeholder": "Confirm your password"
   }
 }

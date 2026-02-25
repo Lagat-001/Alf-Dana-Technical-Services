@@ -210,6 +210,11 @@
     "password_mismatch": "پاسورڈ میل نہیں کھاتے",
     "invalid_credentials": "غلط معلومات۔ دوبارہ کوشش کریں۔",
     "account_exists": "اکاؤنٹ موجود ہے۔ لاگ ان کریں۔",
-    "logout": "لاگ آؤٹ"
+    "logout": "لاگ آؤٹ",
+    "name_placeholder": "آپ کا پورا نام",
+    "email_placeholder": "ای میل پتہ درج کریں",
+    "phone_placeholder": "فون نمبر درج کریں",
+    "password_placeholder": "پاس ورڈ درج کریں",
+    "confirm_placeholder": "پاس ورڈ کی تصدیق کریں"
   }
 }

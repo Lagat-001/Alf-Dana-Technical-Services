@@ -11,19 +11,13 @@
   "lang": "en",
   "icons": [
     {
-      "src": "/icons/icon.svg",
-      "type": "image/svg+xml",
-      "sizes": "any",
-      "purpose": "any maskable"
-    },
-    {
-      "src": "/icons/icon-192.png",
+      "src": "/logo.png",
       "type": "image/png",
-      "sizes": "192x192",
+      "sizes": "512x512",
       "purpose": "any"
     },
     {
-      "src": "/icons/icon-512.png",
+      "src": "/logo.png",
       "type": "image/png",
       "sizes": "512x512",
       "purpose": "maskable"
@@ -35,14 +29,14 @@
       "short_name": "Quote",
       "description": "Get a free quote via WhatsApp",
       "url": "/en/contact",
-      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/logo.png", "sizes": "512x512" }]
     },
     {
       "name": "Our Services",
       "short_name": "Services",
       "description": "View all our services",
       "url": "/en/services",
-      "icons": [{ "src": "/icons/icon.svg", "sizes": "any" }]
+      "icons": [{ "src": "/logo.png", "sizes": "512x512" }]
     }
   ],
   "categories": ["business", "utilities"],
